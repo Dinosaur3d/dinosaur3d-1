@@ -37,3 +37,9 @@ Makefile*
 # QtCtreator CMake
 CMakeLists.txt.user*
 
+####################
+
+/build
+/bin/*.dll
+/sdk
+
