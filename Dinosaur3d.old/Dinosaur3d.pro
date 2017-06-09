@@ -1,6 +1,6 @@
 
 
-QT       += core gui opengl
+QT       += core gui quickwidgets network opengl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,14 +15,23 @@ TEMPLATE = app
 DISTFILES += *.qml
 
 SOURCES += main.cpp \
-    Dinosaur3dWidget.cpp
+    DinosaurWindow.cpp \
+    Dinosaur3d.cpp
 
 HEADERS  += \
-    Dinosaur3dWidget.h
+    DinosaurWindow.h \
+    Dinosaur3d.h
 
 FORMS += \
+    DinosaurWindow.ui
 
 RESOURCES += \
+    login.qrc \
+    main.qrc
+
+RC_FILE = ./icon/Icon.rc
+
+#OTHER_FILES = ./config.xml
 
 #################################
 DESTDIR = $$PWD/../bin
