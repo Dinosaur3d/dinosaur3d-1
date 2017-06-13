@@ -39,7 +39,7 @@ CMakeLists.txt.user*
 
 ####################
 
-/build
-/bin/*.dll
-/sdk
+/build/*
+/bin/*
+/sdk/*
 

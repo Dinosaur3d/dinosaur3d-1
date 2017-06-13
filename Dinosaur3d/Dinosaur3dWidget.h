@@ -1,4 +1,4 @@
-#ifndef DINOSAUR3DWIDGET_H
+﻿#ifndef DINOSAUR3DWIDGET_H
 #define DINOSAUR3DWIDGET_H
 
 #include <QWidget>
@@ -17,9 +17,7 @@ class Dinosaur3dWidget : public QWidget, public osgViewer::CompositeViewer
 {
     Q_OBJECT
 public:
-    explicit Dinosaur3dWidget(QWidget *parent = nullptr,
-                              Qt::WindowFlags f = 0,
-                              osgViewer::ViewerBase::ThreadingModel threadingModel = osgViewer::CompositeViewer::SingleThreaded);
+    explicit Dinosaur3dWidget(QWidget *parent = nullptr, osgViewer::ViewerBase::ThreadingModel threadingModel = osgViewer::CompositeViewer::SingleThreaded);
     QWidget* addViewWidget( osgQt::GraphicsWindowQt* gw, osg::Node* scene);
     osgQt::GraphicsWindowQt* createGraphicsWindow( int x, int y, int w, int h, const std::string& name="", bool windowDecoration=false );
     virtual void paintEvent( QPaintEvent * );
